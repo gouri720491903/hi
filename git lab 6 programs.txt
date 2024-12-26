@@ -1,0 +1,548 @@
+
+bhage@BHAGESH MINGW64 ~ (master)
+$ mkdir cd004
+mkdir: cannot create directory ‘cd004’: File exists
+
+bhage@BHAGESH MINGW64 ~ (master)
+$ cd cd004
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/bhage/cd004/.git/
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ touch new.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ notepad new.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git add new.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git commit -m "this is a new file"
+[master 402f6d9] this is a new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hiiiii/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git add hiiiii
+warning: adding embedded git repository: hiiiii
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> hiiiii
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached hiiiii
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git re --catched hiiiii
+git: 're' is not a git command. See 'git --help'.
+
+The most similar commands are
+        rebase
+        reset
+        restore
+        grep
+        refs
+        rm
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git rm  --catched hiiiii
+error: unknown option `catched'
+usage: git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]
+              [--quiet] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+              [--] [<pathspec>...]
+
+    -n, --[no-]dry-run    dry run
+    -q, --[no-]quiet      do not list removed files
+    --[no-]cached         only remove from the index
+    -f, --[no-]force      override the up-to-date check
+    -r                    allow recursive removal
+    --[no-]ignore-unmatch exit with a zero status even if nothing matched
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git reset  --catched hiiiii
+error: unknown option `catched'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index after reset
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --[no-]patch      select hunks interactively
+    -N, --[no-]intent-to-add
+                          record only the fact that removed paths will be added later
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --[no-]stdin          DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git reset  --hiiiii
+error: unknown option `hiiiii'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index after reset
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --[no-]patch      select hunks interactively
+    -N, --[no-]intent-to-add
+                          record only the fact that removed paths will be added later
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --[no-]stdin          DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hiiiii
+
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git add new.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git git config --global user.name"Bhagesh4604"
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git config --global user.name"Bhagesh4604"
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git config --global user.email"bhageshbiradar820@gmail.com"
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git commit -m"this is my first commit"
+[master cda8ed5] this is my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 160000 hiiiii
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git log
+commit cda8ed5e8daa8c1b6439f2bc29cb829f824e4177 (HEAD -> master)
+Author: Bhagesh4604 <bhageshbiradar820@gmail.com>
+Date:   Mon Nov 18 21:19:13 2024 +0530
+
+    this is my first commit
+
+commit 402f6d9bfbec0f271857852b66213f4dc737ba8a
+Author: Bhagesh4604 <bhageshbiradar820@gmail.com>
+Date:   Mon Nov 18 21:12:33 2024 +0530
+
+    this is a new file
+
+commit 1c3e6533305916a44ab1f6916d7bebc0614161e4 (feature-branch)
+Author: Bhagesh4604 <bhageshbiradar820@gmail.com>
+Date:   Fri Nov 15 15:47:51 2024 +0530
+
+    This is my second Git commit
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git checkout master
+Already on 'master'
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git checkout -b feature-branch
+fatal: a branch named 'feature-branch' already exists
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git checkout feature-branch
+warning: unable to rmdir 'hiiiii': Directory not empty
+Switched to branch 'feature-branch'
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git commit -m"added some content"
+On branch feature-branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hiiiii/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git add hiiiii
+warning: adding embedded git repository: hiiiii
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> hiiiii
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached hiiiii
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git checkout master
+Switched to branch 'master'
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git merge feature-branch
+Already up to date.
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git stash save "hello"
+No local changes to save
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ touch new1.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ notepad new1.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git add new1.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git stash save "hello"
+Saved working directory and index state On master: hello
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git checkout master
+Already on 'master'
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git stash apply
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new1.txt
+
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git stash "temorary changes"
+fatal: subcommand wasn't specified; 'push' can't be assumed due to unexpected token 'temorary changes'
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git stash "hii"
+fatal: subcommand wasn't specified; 'push' can't be assumed due to unexpected token 'hii'
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git stash list
+stash@{0}: On master: hello
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git checkout -b"new-branch"
+A       new1.txt
+Switched to a new branch 'new-branch'
+
+bhage@BHAGESH MINGW64 ~/cd004 (new-branch)
+$ git stash apply
+On branch new-branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new1.txt
+
+
+bhage@BHAGESH MINGW64 ~/cd004 (new-branch)
+$ git clone https://github.com/Bhagesh4604/hiiiii.git
+fatal: destination path 'hiiiii' already exists and is not an empty directory.
+
+bhage@BHAGESH MINGW64 ~/cd004 (new-branch)
+$ git clone https://github.com/Bhagesh4604/Bhagesh-Biradar--Aspiring-Software-Developer.git
+Cloning into 'Bhagesh-Biradar--Aspiring-Software-Developer'...
+remote: Enumerating objects: 39, done.
+remote: Counting objects: 100% (39/39), done.
+remote: Compressing objects: 100% (37/37), done.
+remote: Total 39 (delta 10), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (39/39), 297.63 KiB | 490.00 KiB/s, done.
+Resolving deltas: 100% (10/10), done.
+
+bhage@BHAGESH MINGW64 ~/cd004 (new-branch)
+$ git status
+On branch new-branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Bhagesh-Biradar--Aspiring-Software-Developer/
+
+
+bhage@BHAGESH MINGW64 ~/cd004 (new-branch)
+$ git add  Bhagesh-Biradar--Aspiring-Software-Developer/
+warning: adding embedded git repository: Bhagesh-Biradar--Aspiring-Software-Developer
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Bhagesh-Biradar--Aspiring-Software-Developer
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Bhagesh-Biradar--Aspiring-Software-Developer
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+
+bhage@BHAGESH MINGW64 ~/cd004 (new-branch)
+$ git status
+On branch new-branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Bhagesh-Biradar--Aspiring-Software-Developer
+        new file:   new1.txt
+
+
+bhage@BHAGESH MINGW64 ~/cd004 (new-branch)
+$ git checkout feature-branch
+warning: unable to rmdir 'hiiiii': Directory not empty
+A       Bhagesh-Biradar--Aspiring-Software-Developer
+A       new1.txt
+Switched to branch 'feature-branch'
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git fetch origin
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git remote -v
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git remote add origin https://github.com/Bhagesh4604/Bhagesh-Biradar--Aspiring-Software-Developer.git
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git remote -v
+origin  https://github.com/Bhagesh4604/Bhagesh-Biradar--Aspiring-Software-Developer.git (fetch)
+origin  https://github.com/Bhagesh4604/Bhagesh-Biradar--Aspiring-Software-Developer.git (push)
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git fetch origin
+remote: Enumerating objects: 39, done.
+remote: Counting objects: 100% (39/39), done.
+remote: Compressing objects: 100% (37/37), done.
+remote: Total 39 (delta 10), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (39/39), 297.61 KiB | 909.00 KiB/s, done.
+From https://github.com/Bhagesh4604/Bhagesh-Biradar--Aspiring-Software-Developer
+ * [new branch]      main       -> origin/main
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git rebase origin/master
+fatal: invalid upstream 'origin/master'
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git rebase origin/main
+error: cannot rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git commit -m "new1.txt"
+[feature-branch ad466ea] new1.txt
+ 2 files changed, 2 insertions(+)
+ create mode 160000 Bhagesh-Biradar--Aspiring-Software-Developer
+ create mode 100644 new1.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git rebase origin/main
+warning: unable to rmdir 'Bhagesh-Biradar--Aspiring-Software-Developer': Directory not empty
+Successfully rebased and updated refs/heads/feature-branch.
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git rebase --continue
+fatal: no rebase in progress
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git rebase origin/main
+Current branch feature-branch is up to date.
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git add https://github.com/Bhagesh4604/Bhagesh-Biradar--Aspiring-Software-Developer.git
+fatal: pathspec 'https://github.com/Bhagesh4604/Bhagesh-Biradar--Aspiring-Software-Developer.git' did not match any files
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git add new1.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git commit -m"new"
+On branch feature-branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hiiiii/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git add hiiiii
+warning: adding embedded git repository: hiiiii
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> hiiiii
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached hiiiii
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git stash
+No local changes to save
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ touch new2.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ notepad new2.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git add new2.txt
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git stash
+Saved working directory and index state WIP on feature-branch: bac9de7 new1.txt
+warning: unable to rmdir 'hiiiii': Directory not empty
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git rebase origin/main
+Current branch feature-branch is up to date.
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git rebase --continue
+fatal: no rebase in progress
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git push --force
+fatal: The current branch feature-branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature-branch
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git push --set-upstream origin feature-branch
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 592 bytes | 592.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature-branch' on GitHub by visiting:
+remote:      https://github.com/Bhagesh4604/Bhagesh-Biradar--Aspiring-Software-Developer/pull/new/feature-branch
+remote:
+To https://github.com/Bhagesh4604/Bhagesh-Biradar--Aspiring-Software-Developer.git
+ * [new branch]      feature-branch -> feature-branch
+branch 'feature-branch' set up to track 'origin/feature-branch'.
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git push --force
+Everything up-to-date
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git merge feature-branch -m"hey"
+Already up to date.
+
+bhage@BHAGESH MINGW64 ~/cd004 (feature-branch)
+$ git checkout master
+warning: unable to rmdir 'Bhagesh-Biradar--Aspiring-Software-Developer': Directory not empty
+Switched to branch 'master'
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git merge feature-branch -m"hey"
+fatal: refusing to merge unrelated histories
+
+bhage@BHAGESH MINGW64 ~/cd004 (master)
+$ git checkout new-branch
+Switched to branch 'new-branch'
+
+bhage@BHAGESH MINGW64 ~/cd004 (new-branch)
+$ git merge feature-branch -m"hey"
+fatal: refusing to merge unrelated histories
+
+bhage@BHAGESH MINGW64 ~/cd004 (new-branch)
+$ git log
+commit cda8ed5e8daa8c1b6439f2bc29cb829f824e4177 (HEAD -> new-branch, master)
+Author: Bhagesh4604 <bhageshbiradar820@gmail.com>
+Date:   Mon Nov 18 21:19:13 2024 +0530
+
+    this is my first commit
+
+commit 402f6d9bfbec0f271857852b66213f4dc737ba8a
+Author: Bhagesh4604 <bhageshbiradar820@gmail.com>
+Date:   Mon Nov 18 21:12:33 2024 +0530
+
+    this is a new file
+
+commit 1c3e6533305916a44ab1f6916d7bebc0614161e4
+Author: Bhagesh4604 <bhageshbiradar820@gmail.com>
+Date:   Fri Nov 15 15:47:51 2024 +0530
+
+    This is my second Git commit
